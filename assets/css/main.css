@@ -130,7 +130,7 @@ a { text-decoration: none !important }
 .manBg {
     position: absolute;
     bottom: 0;
-    max-width: 65%;
+    max-width: 60%;
     right: 0 !important;
 }
 .man {
@@ -391,6 +391,8 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow, .slick-dots button
         z-index: 0;
         right: 0;
         background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: bottom;
     }
 
     .financialWallness {
