@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome icons cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Slick cdn -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./public/css/main.css">
+    <title>QSalary</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="row w-100">
+            <div class="container">
+                <div class="p-3 px-0 px-xl-0 w-100 d-flex justify-content-between gap-3 align-items-center">
+                    <div>
+                        <a href="/" class="d-flex justify-content-start align-items-center">
+                            <img src="./public/assets/logo_en.svg" height="43" alt="qSalary" title="qSalary" />
+                            <span class="d-flex flex-nowrap navSlogan d-none d-xl-flex">| Your Cash Solution</span>
+                        </a>
+                    </div>
+                    <div class="navContent-lg d-none d-xl-flex justify-content-end gap-5">
+                        <div class="d-flex gap-4 align-items-center justify-content-start">
+                            <a href="#" class="routes active">Home</a>
+                            <a href="#" class="routes">About Us</a>
+                            <a href="#" class="routes">Employer Benefits</a>
+                            <a href="#" class="routes">Employee Benefits</a>
+                            <a href="#" class="routes">Contact</a>
+                        </div>
+                        <div class="d-flex align-items-center juatify-content-end gap-4">
+                            <div class="lang">العربية</div>
+                            <button class="btn borderPrimaryBtn joinToday">JOIN TODAY</button>
+                        </div>
+                    </div>
+                    <div class="navContent-lg d-flex d-xl-none justify-content-end gap-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <span class="lang">العربية</span>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+          <div class="offcanvas offcanvas-end d-flex d-xl-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-column align-items-start justify-content-start">
+                    <a href="#" class="routes active">Home</a>
+                    <a href="#" class="routes">About Us</a>
+                    <a href="#" class="routes">Employer Benefits</a>
+                    <a href="#" class="routes">Employee Benefits</a>
+                    <a href="#" class="routes">Contact</a>
+                </div>
+                <hr class="hr" />
+                <button class="btn borderPrimaryBtn joinToday mt-3">JOIN TODAY</button>
+            </div>
+          </div>
+    </nav>
+
+    <!-- Content -->
+    <!-- Financial Wallness -->
+    <div class="row mt-5">
+        <div class="container">
+            <div class="financialWallness p-5 px-5 relative overflow-hidden">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-lg-6 col-lg-7">
+                        <div class="smallLine mb-4 d-none d-lg-flex"></div>
+                        <h1 class="financialHeading mb-4">Financial Wellness Gate for Your Employees</h1>
+                        <p class="financialP mb-4">Empower your employees to access their earned wages anytime, and make
+                            every day a payday.</p>
+                        <div class="d-flex flex-column flex-lg-row gap-4 align-items-center">
+                            <button class="btn w-100 btn-primary reqDemo">Request a demo</button>
+                            <button class="btn w-100 borderPrimaryBtn reqDemo"><i class="fa-solid fa-download"></i> Download
+                                the app</button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-lg-6 col-lg-5 mt-5 mt-lg-0">
+                        <div class="w-100 text-center">
+                            <img src="./public/assets/manBG.png" class="manBg" />
+                            <img src="./public/assets/man.png" class="manBg man" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employer Benifits -->
+    <div class="row employerBenifits section mb-5">
+        <div class="container">
+            <div class="row">
+                <h3 class="title text-center mx-auto mt-0 mb-5">Employer Benefits</h3>
+
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/zeroCost.svg" />
+                    <h4>Zero Cost</h4>
+                    <p>No hidden, surprise or additional fees.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/zeroInterset.svg" />
+                    <h4>Zero Interest</h4>
+                    <p>Full compliance with Shariah.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/timeSaving.svg" />
+                    <h4>Time-saving</h4>
+                    <p>Release pressure on human resources in your company.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/zeroCost.svg" />
+                    <h4>Easy Liquidity</h4>
+                    <p>Your employees will no longer need to apply for loans.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/moneyCollection.svg" />
+                    <h4>Money Collection</h4>
+                    <p>Withdrawn Payments will be automatically deducted when transferring salaries.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/quickAccess.svg" />
+                    <h4>Quick Access</h4>
+                    <p>Meet the financial needs of your employees whenever they want.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/increasedProd.svg" />
+                    <h4>Increased Productivity</h4>
+                    <p>Free your employees from financial worries, enabling complete focus on their work.</p>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/turnoverReduction.svg" />
+                    <h4>Turnover Reduction</h4>
+                    <p>Enhance employee job satisfaction and loyalty.</p>
+                </div>
+            </div>
+            <div class="w-100 text-center">
+                <button class="btn btn-primary reqDemo w-auto mx-auto mt-4">See more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- How Does Qsalary Work -->
+    <div class="row employerBenifits howQSalaeyWork text-center">
+        <div class="container">
+            <div class="row mb-5">
+                <p class="smallTitle">How Does Qsalary Work?</p>
+                <h4 class="title mx-auto">Financial Freedom for Your Employees in 3 Simple Steps</h4>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
+                    <img class="mb-4" src="./public/assets/registration.png" />
+                    <h4>Register Your Company</h4>
+                    <p>Registration is easy, complications and hassle free, just contact us.</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
+                    <img class="mb-4" src="./public/assets/addYourEmployees.png" />
+                    <h4>Register Your Company</h4>
+                    <p>Registration is easy, complications and hassle free, just contact us.</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
+                    <img class="mb-4" src="./public/assets/setMaxWithdraw.png" />
+                    <h4>Register Your Company</h4>
+                    <p>Registration is easy, complications and hassle free, just contact us.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Taking your employees out of their financial stress -->
+    <div class="row text-center takingYourEmployees">
+        <div class="container">
+            <div class="row mb-5">
+                <h4 class="title mb-5 mx-auto">Taking your employees out of their financial stress</h4>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
+                    <h4 class="sectionTitle">72%</h4>
+                    <p>of individuals experience financial stress at least once a year</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
+                    <h4 class="sectionTitle">300<sup>k</sup>$</h4>
+                    <p>the annual cost to employers in lost productivity as a result of employee financial stress</p>
+                </div>
+
+                <div class="col-12 col-md-4 text-center mb-5 mb-md-0">
+                    <h4 class="sectionTitle">20%</h4>
+                    <p>of employee turnover attributable to financial stress</p>
+                </div>
+            </div>
+            <div class="w-100 text-center">
+                <button class="btn btn-primary reqDemo w-auto mx-auto mt-5">Request a demo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Employer Benifits 2 -->
+    <div class="row employerBenifits section employerBenifits2 mb-5">
+        <div class="container">
+            <div class="row">
+                <h3 class="title text-center mx-auto mt-0 mb-5">Employer Benefits</h3>
+
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/instant.svg" />
+                    <h4>Instant Liquidity 24/7</h4>
+                    <p>Do you have emergency expenses? Get liquidity with just one click.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/noMore.svg" />
+                    <h4>No More Wages Delays</h4>
+                    <p>Administrative procedures will no longer hinder your earned wages access. Get the money you need
+                        anytime.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/youWantToMiss.svg" />
+                    <h4>You Won't Miss Any Promotion</h4>
+                    <p>With Qsalary, never miss sales discounts due to liquidity issues.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/centralized.svg" />
+                    <h4>Centralized Expense Management</h4>
+                    <p>Enjoy a user-friendly app displaying your remaining wages on your smartphone.</p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center mb-5">
+                    <img class="mb-4" src="./public/assets/fixedPrice.svg" />
+                    <h4>Fixed Fees, 0% Interest</h4>
+                    <p>No interest will apply to any amount you withdraw, but a flat fee per withdrawal.</p>
+                </div>
+            </div>
+            <div class="w-100 text-center">
+                <button class="btn btn-primary reqDemo w-auto mx-auto mt-4">See more</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Download the app -->
+    <div class="row">
+        <div class="container">
+            <div class="downloadAppSection">
+                <img class="floatingMobile" src="./public/assets/floatingMobile.png" />
+                <div class="row">
+                    <div class="col-12 col-md-6 relative downloadAppContentWrapper">
+                        <p class="text-left dowloadTitle">Download the app</p>
+                        <h5 class="helpP mb-4">Help Us Contact Your Company</h5>
+                        <div class="d-flex flex-column flex-md-row gap-4">
+                            <a href="#">
+                                <img width="190" src="./public/assets/appStore.png" />
+                            </a>
+                            <a href="#">
+                                <img width="190" src="./public/assets/googlePlay.png" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <img class="downloadBg" src="./public/assets/downloadtheAppBG.png" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Faqs -->
+    <div class="row employerBenifits howQSalaeyWork faqsContainer text-center">
+        <div class="container">
+            <div class="row mb-5">
+                <h4 class="title mx-auto">FAQs</h4>
+            </div>
+            <div class="mx-auto faqWrapper">
+                <div class="row">
+                    <button class="btn faq mx-auto mb-2 btn-primary d-flex justify-content-between align-items-center"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#whatIsQSalary" aria-expanded="false"
+                        aria-controls="whatIsQSalary">
+                        <span class="faqTitle">What is Qsalary?</span>
+                        <span class="d-flex justify-content-center align-items-center circlePlus"><i
+                                class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="collapse" id="whatIsQSalary">
+                        <div class="card card-body">Empower your employees to access their earned wages anytime, and
+                            make every day a payday.</div>
+                    </div>
+
+                    <button class="btn faq mx-auto mb-2 btn-primary d-flex justify-content-between align-items-center"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#IsQSalaryLoan" aria-expanded="false"
+                        aria-controls="IsQSalaryLoan">
+                        <span class="faqTitle">Is Qsalary a loan service?</span>
+                        <span class="d-flex justify-content-center align-items-center circlePlus"><i
+                                class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="collapse" id="IsQSalaryLoan">
+                        <div class="card card-body">Administrative procedures will no longer hinder your earned wages
+                            access. Get the money you need anytime.</div>
+                    </div>
+
+                    <button class="btn faq mx-auto mb-2 btn-primary d-flex justify-content-between align-items-center"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#fromWhomIsQSalary"
+                        aria-expanded="false" aria-controls="fromWhomIsQSalary">
+                        <span class="faqTitle">For whom is Qsalary?</span>
+                        <span class="d-flex justify-content-center align-items-center circlePlus"><i
+                                class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="collapse" id="fromWhomIsQSalary">
+                        <div class="card card-body">Administrative procedures will no longer hinder your earned wages
+                            access. Get the money you need anytime.</div>
+                    </div>
+
+                    <button class="btn faq mx-auto mb-2 btn-primary d-flex justify-content-between align-items-center"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#isthereAMinmumNumberOFSalary"
+                        aria-expanded="false" aria-controls="isthereAMinmumNumberOFSalary">
+                        <span class="faqTitle">Is there a minimum salary requirement for this app?</span>
+                        <span class="d-flex justify-content-center align-items-center circlePlus"><i
+                                class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="collapse" id="isthereAMinmumNumberOFSalary">
+                        <div class="card card-body">Administrative procedures will no longer hinder your earned wages
+                            access. Get the money you need anytime.</div>
+                    </div>
+
+                    <button class="btn faq mx-auto mb-2 btn-primary d-flex justify-content-between align-items-center"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#isThereAMinmumNumber"
+                        aria-expanded="false" aria-controls="isThereAMinmumNumber">
+                        <span class="faqTitle">Is there a minimum number of employees required from the company?</span>
+                        <span class="d-flex justify-content-center align-items-center circlePlus"><i
+                                class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="collapse" id="isThereAMinmumNumber">
+                        <div class="card card-body">Administrative procedures will no longer hinder your earned wages
+                            access. Get the money you need anytime.</div>
+                    </div>
+
+                    <button class="btn faq mx-auto mb-2 btn-primary d-flex justify-content-between align-items-center"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#DoesQSalaryChargeAnyInterest"
+                        aria-expanded="false" aria-controls="DoesQSalaryChargeAnyInterest">
+                        <span class="faqTitle">Does Qsalary charge any interest?</span>
+                        <span class="d-flex justify-content-center align-items-center circlePlus"><i
+                                class="fa-solid fa-plus"></i></span>
+                    </button>
+                    <div class="collapse" id="DoesQSalaryChargeAnyInterest">
+                        <div class="card card-body">Administrative procedures will no longer hinder your earned wages
+                            access. Get the money you need anytime.</div>
+                    </div>
+                </div>
+
+                <div class="w-100 text-center">
+                    <button class="btn btn-primary reqDemo w-auto mx-auto mt-5">See more</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our success partners -->
+    <div class="row">
+        <div class="container">
+            <div class="autoplay mt-5">
+                <div><img width="80" src="./public/assets/logo1.png" /></div>
+                <div><img width="80" src="./public/assets/logo2.png" /></div>
+                <div><img width="80" src="./public/assets/logo3.png" /></div>
+                <div><img width="80" src="./public/assets/logo4.png" /></div>
+                <div><img width="80" src="./public/assets/logo5.png" /></div>
+                <div><img width="80" src="./public/assets/logo7.png" /></div>
+                <div><img width="80" src="./public/assets/logo8.png" /></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ready to empower -->
+    <div class="row">
+        <div class="container">
+            <div class="row employerBenifits howQSalaeyWork faqsContainer text-center readyToEmpower relative">
+                <div class="container">
+                    <div class="o">
+                        <i class="fa-solid fa-o"></i>
+                    </div>
+
+                    <div class="row mb-5">
+                        <p>Start Now</p>
+                        <h4 class="title mx-auto">Ready to empower your employees with anytime wage access?</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="d-flex justify-content-center align-items-center gap-5 flex-wrap">
+                            <span class="d-flex gap-3 align-items-center">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Quick &amp; easy</span>
+                            </span>
+
+                            <span class="d-flex gap-3 align-items-center">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Automation</span>
+                            </span>
+
+                            <span class="d-flex gap-3 align-items-center">
+                                <i class="fa-solid fa-check"></i>
+                                <span>No Interests</span>
+                            </span>
+
+                            <span class="d-flex gap-3 align-items-center">
+                                <i class="fa-solid fa-check"></i>
+                                <span>Stress Free</span>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="w-100 text-center">
+                        <button class="btn btn-primary reqDemo w-auto mx-auto mt-5">Request a demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="row subsWrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 mb-5 mb-md-0">
+                    <p class="smallSubsTitle mb-4">Stay in the know</p>
+                    <h4 class="subsTitle mb-4">Subscribe Mailing List</h4>
+                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-start align-items-center">
+                        <input class="subsInput" placeholder="Email address" />
+                        <button class="btn borderPrimaryBtn subsBtn">subscribe</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                    <p class="smallSubsTitle mb-4">Follow Us</p>
+                    <h4 class="subsTitle mb-4">Social Media Accounts</h4>
+                    <div class="d-flex justify-content-between flex-wrap justify-content-lg-start align-items-center brandsWrapper">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="container">
+                <div class="footerWrapper">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
+                        <a href="/" class="d-flex justify-content-start align-items-center">
+                            <img src="./public/assets/logo_en.svg" height="43" alt="qSalary" title="qSalary" />
+                        </a>
+                        <div class="navContent-lg d-flex justify-content-end gap-3">
+                            <div class="d-flex gap-4 align-items-center justify-content-start">
+                                <a href="#" class="routes">Blog</a>
+                                <a href="#" class="routes">FAQ</a>
+                                <a href="#" class="routes">Privacy Policy</a>
+                            </div>
+                            <div class="d-flex align-items-center juatify-content-end gap-4">
+                                <div class="lang">العربية</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row flex-lg-row gap-4">
+                            <a href="#">
+                                <img width="140" src="./public/assets/googlePlay.png" />
+                            </a>
+                            <a href="#">
+                                <img width="140" src="./public/assets/appStore.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row gap-3 justify-content-center justify-content-lg-center align-items-center rights">
+                        <p class="mb-0">Powered by ASFA Ventures</p>
+                        <p class="mb-0">All rights reserved© Qsalary 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Slick cdn -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>
