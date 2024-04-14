@@ -461,6 +461,9 @@ button.slick-prev.slick-arrow, button.slick-next.slick-arrow, .slick-dots button
     .downloadAppSection {
         padding: 2.5rem 2.5rem 19rem 2.5rem;
     }
+    .footerWrapper {
+        padding: 20px !important;
+    }
     .floatingMobile{
         position: absolute;
         max-height: 270px;
