@@ -1,3 +1,14 @@
+const preloader = document.querySelector("[data-preloader]");
+
+window.addEventListener("load", function () {
+    preloader.classList.add("loaded");
+    document.body.classList.add("loaded");
+    
+    this.setTimeout(() => {
+        preloader.remove();
+    }, 2000)
+});
+
 $(document).ready(function () {
     $('.autoplay').slick({
         slidesToShow: 3,
